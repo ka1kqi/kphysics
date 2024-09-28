@@ -1,0 +1,11 @@
+outline of proj
+
+kphysics_ monte carlo simulation of particle diffusion, based on mcphysics
+
+todo_
+    add utils.c to retrieve https data
+    create list objects
+
+
+structure_
+    
