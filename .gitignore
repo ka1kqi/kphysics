@@ -1,0 +1,9 @@
+# compiled source #
+
+*.o
+*.jar
+*.zip
+*.tar
+*.dll
+*.exe
+*.com
