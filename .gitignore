@@ -1,5 +1,4 @@
 # compiled source #
-
 *.o
 *.jar
 *.zip
@@ -7,3 +6,9 @@
 *.dll
 *.exe
 *.com
+#  outline of project  #
+todo.txt
+
+#  misc  #
+.gitignore
+build/

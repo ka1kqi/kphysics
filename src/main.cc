@@ -1,11 +1,9 @@
 #include <iostream>
+#include "voxel/voxelList.hh"
 
 int main(void) {
-    char str[] = "hello world\n";
-    std::cout<<str;
-    void* X;
-    X=(void*)0;
-    int* y = (int*)X;
-    std::cout << &y<<"\n";
+    voxelList vox_list(10,ALPHA);
+    vox_list.initVoxelList();
+    std::cout<< "Voxel list initalized\n";
     return 0;
 }
