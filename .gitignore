@@ -12,3 +12,4 @@ todo.txt
 #  misc  #
 .gitignore
 build/
+.DS_Store
