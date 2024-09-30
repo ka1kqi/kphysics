@@ -10,7 +10,6 @@
 
 
 #  misc  #
-.gitignore
 build/
 **/.DS_Store
 .vscode/
