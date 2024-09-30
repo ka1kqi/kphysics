@@ -1,0 +1,18 @@
+outline of proj
+
+kphysics_ monte carlo simulation of particle diffusion, based on mcphysics
+
+todo_
+    add utils.c to retrieve https data
+    create list objects
+    get isotope data using curl
+    makefile
+    beta paricle track class/struct
+
+
+structure_
+    list of interaction points in material inside each voxel? 
+    maybe do just list of interactions then
+    alpha particles don't have travel far enough to leave voxel
+    list of voxels
+    voxel object, store each voxel and maintain list of interactions in each voxel.

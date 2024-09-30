@@ -7,7 +7,7 @@
 *.exe
 *.com
 #  outline of project  #
-todo.txt
+
 
 #  misc  #
 .gitignore

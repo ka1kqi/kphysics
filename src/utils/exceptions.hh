@@ -16,7 +16,7 @@
  * *********************************************/
 
 class voxel_init_exception : public std::exception {
-    char message[1024] = "ERROR: failed to initialize voxel ";
+    char message[1024] = "ERROR: Voxel exception at ";
 public:
     virtual const char* what() const throw() {
         return message;

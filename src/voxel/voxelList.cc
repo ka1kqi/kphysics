@@ -1,13 +1,11 @@
-//standard library includes
 #include <iostream>
 #include <string>
 #include <assert.h>
 #include <exception>
 
-//project includes
 #include "voxelList.hh"
 #include "voxel.hh"
-#include "utils/exceptions.hh"
+#include "exceptions.hh"
 
 voxelList::voxelList(int num_voxels_)
     : num_voxels(num_voxels_) {}
@@ -43,6 +41,9 @@ const int voxelList::initVoxelList() {
 }
 
 const int voxelList::set_num_voxels(int num_voxels_) {
+    assert(get_num_voxels() > 0 && "ERROR: src/voxel/voxelList.cc -> set_num_voxels(int), cannot set length of voxel list to 0\n");
+    assert(get_num_voxels() < num_voxels_ && 
+            "ERROR: src/voxel/voxelList.cc -> set_num_voxels(int), cannot set length of voxel list to less than current length");
     num_voxels = num_voxels_;
     int count = 0;
     try {
@@ -53,7 +54,7 @@ const int voxelList::set_num_voxels(int num_voxels_) {
         }
     }
     catch (voxel_init_exception& e) {
-        std::cerr << e.what() << std::to_string(count) << "at src/voxel/voxelList.cc -> set_num_voxels()" << std::endl;
+        std::cerr << e.what() << std::to_string(count) << "at src/voxel/voxelList.cc -> set_num_voxels(int)" << std::endl;
     }
     return count;
 }
