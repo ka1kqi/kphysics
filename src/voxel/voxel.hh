@@ -3,7 +3,6 @@
 
 #include <iostream>
 
-
 struct Voxel {
     int v_idx;
     float v_energy_total;
