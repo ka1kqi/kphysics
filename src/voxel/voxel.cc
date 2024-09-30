@@ -14,3 +14,4 @@ const int Voxel::get_index() const {
 float Voxel::get_energy_total() const {
     return v_energy_total;
 }
+

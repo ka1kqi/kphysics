@@ -4,11 +4,10 @@
 #include <iostream>
 
 
-class Voxel {
+struct Voxel {
     int v_idx;
     float v_energy_total;
-
-public:
+    
     explicit Voxel(int voxel_idx_);
     const int get_index() const;
     float get_energy_total() const;
