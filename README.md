@@ -10,7 +10,7 @@ Only supported on Apple systems
 - C++ >=17
 - llvm
 - brew
-- imagemagick
+- ImageMagick
 
 ## Installation
 Install OpenMP and ImageMagick if not installed 
