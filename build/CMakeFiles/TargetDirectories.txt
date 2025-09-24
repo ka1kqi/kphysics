@@ -1,0 +1,6 @@
+/Users/kaikaidu/Documents/GitHub/kphysics/build/CMakeFiles/r70.dir
+/Users/kaikaidu/Documents/GitHub/kphysics/build/CMakeFiles/edit_cache.dir
+/Users/kaikaidu/Documents/GitHub/kphysics/build/CMakeFiles/rebuild_cache.dir
+/Users/kaikaidu/Documents/GitHub/kphysics/build/src/CMakeFiles/kphysics.dir
+/Users/kaikaidu/Documents/GitHub/kphysics/build/src/CMakeFiles/edit_cache.dir
+/Users/kaikaidu/Documents/GitHub/kphysics/build/src/CMakeFiles/rebuild_cache.dir
