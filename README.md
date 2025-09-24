@@ -8,7 +8,7 @@ Only supported on Apple systems
 
 ### Requirements
 - C++ >=17
-- Clang
+- llvm
 - brew
 - imagemagick
 
@@ -16,7 +16,9 @@ Only supported on Apple systems
 Install OpenMP and ImageMagick if not installed 
 
 ```
+#if llvm not installed
 brew install llvm libomp
+
 brew install imagemagick
 ```
 
