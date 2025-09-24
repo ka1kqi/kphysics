@@ -1,0 +1,57 @@
+# ---- Build directories ----
+build/
+cmake-build-*/
+out/
+bin/
+lib/
+
+# ---- CMake generated files ----
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# ---- Compiled binaries & libs ----
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.out
+
+# ---- Logs & temp ----
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ---- IDE/editor files ----
+# VS Code
+.vscode/
+# CLion
+.idea/
+# Xcode
+*.xcworkspace/
+*.xcodeproj/
+# Others
+.DS_Store
+Thumbs.db
+
+# ---- Python helper scripts (if any) ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---- Project-specific outputs ----
+absorption*.csv
+absorption*.pgm
+absorption*.raw
+absorption*.vti
+test.pgm
+*.pgm
