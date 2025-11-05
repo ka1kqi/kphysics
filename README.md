@@ -1,5 +1,7 @@
 # kphysics
-Monte Carlo Photon propogation sim, built on OpenMP and ImageMagick. Takes a PGM as the propogation material.
+Monte Carlo photon propogation sim, built on OpenMP and ImageMagick. Takes a PGM as the propogation material.
+Uses the Henyey-Greenstein scattering function to determine a new direction given old direction V and the anistrophy g set in main when calling function loadVolumeFromPGM().  
+
 Upload a PHM or generate from a JPEG/PNG. 
 
 Only supported on Apple systems

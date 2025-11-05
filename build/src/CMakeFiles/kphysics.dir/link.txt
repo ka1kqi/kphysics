@@ -1,2 +1,0 @@
-/usr/bin/ar qc libkphysics.a CMakeFiles/kphysics.dir/engine.cpp.o CMakeFiles/kphysics.dir/main.cpp.o
-/opt/homebrew/opt/llvm/bin/llvm-ranlib libkphysics.a

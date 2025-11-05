@@ -19,8 +19,8 @@ public:
         volume.resize((size_t)Nx*Ny*Nz);
         auto at=[&](int x,int y,int z)->Material&{return volume[x+Nx*(y+Ny*z)];};
         mu_star=0;
-        for(int z=0;z<Nz;z++)
-            for(int y=0;y<Ny;y++)
+        for(int z=0;z<Nz;z++) {
+            for(int y=0;y<Ny;y++) {
                 for(int x=0;x<Nx;x++){
                     double ggray=im.pix[x+im.w*y]/255.0;
                     double mu_a=mu_a_min+ggray*(mu_a_max-mu_a_min);
@@ -28,6 +28,8 @@ public:
                     at(x,y,z)={(float)mu_a,(float)mu_s,(float)g_aniso};
                     mu_star=std::max(mu_star,mu_a+mu_s);
                 }
+            }
+        }
         absorb.assign((size_t)Nx*Ny*Nz,0.0);
         return true;
     }
@@ -92,19 +94,19 @@ public:
         #ifdef _OPENMP
         #pragma omp critical
         #endif
-            {
-                for(size_t i=0;i<absorb.size();i++) 
-                    absorb[i]+=absorb_local[i];
-                R_total+=R; T_total+=T;
-            }
+            for(size_t i=0;i<absorb.size();i++) 
+                absorb[i]+=absorb_local[i];
+            R_total+=R; T_total+=T;
         }
     }
     void writeAbsorption2D(const std::string& csv,const std::string& pgm){
         std::vector<double> sum_xy((size_t)Nx*Ny,0.0);
-        for(int z=0;z<Nz;z++)
-            for(int y=0;y<Ny;y++)
+        for(int z=0;z<Nz;z++) {
+            for(int y=0;y<Ny;y++) {
                 for(int x=0;x<Nx;x++)
                     sum_xy[x+Nx*y]+=absorb[x+Nx*(y+Ny*z)];
+            }
+        }
         // CSV
         std::ofstream out(csv);
         for(int y=0;y<Ny;y++){
@@ -140,4 +142,3 @@ private:
     double mu_star=0;
     double R_total=0,T_total=0;
 };
-

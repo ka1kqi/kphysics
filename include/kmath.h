@@ -7,7 +7,8 @@ static inline Vec3 sample_HG(const Vec3& w, double g, std::mt19937_64& rng){
     std::uniform_real_distribution<double> U(0.0,1.0);
     double u1=U(rng), u2=U(rng);
     double cost;
-    if (std::abs(g) < 1e-12) cost = 2.0*u1 - 1.0;
+    if (std::abs(g) < 1e-12) 
+        cost = 2.0*u1 - 1.0;
     else {
         double t = (1.0 - g*g) / (1.0 - g + 2.0*g*u1);
         cost = (1.0 + g*g - t*t) / (2.0*g);
